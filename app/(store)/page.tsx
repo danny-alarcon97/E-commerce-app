@@ -1,5 +1,5 @@
 import ProductsView from "@/components/ProductsView";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import { getAllCategories } from "@/sanity/lib/products/getAllCategories";
 import { getAllProducts } from "@/sanity/lib/products/getAllProducts";
 
@@ -9,7 +9,7 @@ export default async function Home() {
 
   return (
     <div>
-      <h1>Hello World</h1>
+      <NewYearBanner />
 
       <div className="flex flex-col items-center justify-top min-h-screen bg-gray-100 p-4">
         <ProductsView
@@ -17,7 +17,6 @@ export default async function Home() {
           categories={categories}
         ></ProductsView>
       </div>
-      <Button>Click me</Button>
     </div>
   );
 }
