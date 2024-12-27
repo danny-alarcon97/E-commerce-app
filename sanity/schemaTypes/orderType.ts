@@ -40,7 +40,7 @@ export const orderType = defineType({
       name: "email",
       title: "Customer Email",
       type: "string",
-      validation: (Rule) => Rule.required(),
+      validation: (Rule) => Rule.required().email(),
     }),
     defineField({
       name: "stripePaymentIntentId",
@@ -60,7 +60,7 @@ export const orderType = defineType({
               name: "product",
               title: "Product Bought",
               type: "reference",
-              to: [{ type: "products" }],
+              to: [{ type: "product" }],
             }),
             defineField({
               name: "quantity",
