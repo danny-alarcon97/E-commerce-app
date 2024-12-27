@@ -1,4 +1,3 @@
-/* eslint-disable import/no-anonymous-default-export */
 import { TrolleyIcon } from "@sanity/icons";
 import { defineField, defineType } from "sanity";
 
