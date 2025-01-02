@@ -1,6 +1,6 @@
 "use client";
 
-import { Product } from "@sanity/types";
+import { Product } from "@/sanity.types";
 import useBasketStore from "@/store/store";
 import { useEffect, useState } from "react";
 
